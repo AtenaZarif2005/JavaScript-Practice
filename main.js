@@ -55,10 +55,10 @@
 
 //تمرین عملگرهای مقایسه ای
 
-// let personWeight1 = prompt("plz enter ur weight");
-// let personHeight1 = prompt("plz enter ur height");
-// let personWeight2 = prompt("plz enter ur weight");
-// let personHeight2 = prompt("plz enter ur height");
+// let personWeight1 = +prompt("plz enter ur weight");
+// let personHeight1 = +prompt("plz enter ur height");
+// let personWeight2 = +prompt("plz enter ur weight");
+// let personHeight2 = +prompt("plz enter ur height");
 // let person1BMI = personWeight1 / (personHeight1**2);
 // let person2BMI = personWeight2 / (personHeight2**2);
 // console.log(person1BMI);
@@ -68,4 +68,58 @@
 
 //____________________________________________________________________________________________________________________
 
+//تمرین عملگرهای شرطی 
 
+// let time = 12;
+// if(time>=22){
+//     alert("Good midnight, Welcome'♡'.");
+// }
+// else if(time>=19){
+//     alert("Good night, Welcome'♡'.");
+// }
+// else if(time>=16){
+//     alert("Good evening, Welcome'♡'.");
+// }
+// else if(time>=11){
+//     alert("Good afternoon, Welcome'♡'.");
+// }
+// else if(time>=6){
+//     alert("Good morning, Welcome'♡'.");
+// }
+// else{
+//     alert("Good midnight, Welcome'♡'.");
+// }
+
+//____________________________________________________________________________________________________________________
+
+//تمرین تحویلی 1 
+
+// let priceOfProduct = +prompt("Please enter the product price.");
+// alert("Thank you.♡");
+// let productQuantity = +prompt("How many of this product would you like to purchase?");
+// alert("For your information:\n\nIf you purchase more than 500,000 Toman, you will get a 20% discount.\nIf you purchase more than 200,000 Toman, you will get a 10% discount.\nAnd if it is less than 200000 Toman, unfortunately, you will not be eligible for a discount.");
+// let price = priceOfProduct * productQuantity;
+// let totalPrice = price;
+// if(price>500000){
+//     totalPrice = price - (price * 0.2);
+// }
+// else if(price>200000){
+//     totalPrice = price - (price * 0.1);
+// }
+// alert('your final payment price is ' + totalPrice + '\nThank you for your purchase');
+
+//___________________________________________________________________________________________________________________
+
+//تمرین تحویلی 2
+
+let getSize = +prompt("Please enter the desired image size without the px suffix.♡");
+let answer = confirm("Would you like to double the image size?");
+let newSize = getSize;
+if(answer){
+    newSize = getSize * 2;
+}
+alert("The new size is equal to " + newSize+ " px.")
+
+
+
+//___________________________________________________________________________________________________________________
