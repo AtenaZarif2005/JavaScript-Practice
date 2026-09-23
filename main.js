@@ -1,4 +1,4 @@
-//تمرین اول انواع متغییر
+// "Variable types"
 
 // const nameOfShopping="digiKala";
 // let name="airPods";
@@ -16,7 +16,7 @@
 // console.log(typeof stockStatus);
 //_____________________________________________________________________________________________________________________
 
-// تمرین دوم رشته ها
+// "Strings"
 
 // let width="400px";
 // console.log(parseInt(width));
@@ -24,7 +24,7 @@
 // console.log(massage);
 // ____________________________________________________________________________________________________________________
 
-//تمرین سوم اطلاعات کاربر
+// "User information"
 
 // let numb1 = +prompt("number 1");
 // console.log(numb1);
@@ -34,14 +34,14 @@
 // console.log(numb3);
 //____________________________________________________________________________________________________________________
 
-// متد confirm تمرین  
+// "Confirm method"
 
 // let isSure = confirm("Are you sure you wanna delete your account?");
 // console.log(isSure);
 
 //____________________________________________________________________________________________________________________
 
-// تمرین عملگرهای محاسباتی
+// "Arthmetic operators"
 
 // let numb1 = 20;
 // let numb2 = 5;
@@ -53,7 +53,7 @@
 
 //____________________________________________________________________________________________________________________
 
-//تمرین عملگرهای مقایسه ای
+// "Comparison operators"
 
 // let personWeight1 = +prompt("plz enter ur weight");
 // let personHeight1 = +prompt("plz enter ur height");
@@ -68,7 +68,7 @@
 
 //____________________________________________________________________________________________________________________
 
-//تمرین عملگرهای شرطی 
+// "Conditinal operators"
 
 // let time = 12;
 // if(time>=22){
@@ -92,7 +92,7 @@
 
 //____________________________________________________________________________________________________________________
 
-//تمرین تحویلی 1 
+// "Assignment 1 "
 
 // let priceOfProduct = +prompt("Please enter the product price.");
 // alert("Thank you.♡");
@@ -110,16 +110,63 @@
 
 //___________________________________________________________________________________________________________________
 
-//تمرین تحویلی 2
+// "Assignment 2 "
 
-let getSize = +prompt("Please enter the desired image size without the px suffix.♡");
-let answer = confirm("Would you like to double the image size?");
-let newSize = getSize;
-if(answer){
-    newSize = getSize * 2;
-}
-alert("The new size is equal to " + newSize+ " px.")
-
-
+// let getSize = +prompt("Please enter the desired image size without the px suffix.♡");
+// let answer = confirm("Would you like to double the image size?");
+// let newSize = getSize;
+// if(answer){
+//     newSize = getSize * 2;
+// }
+// alert("The new size is equal to " + newSize+ " px.");
 
 //___________________________________________________________________________________________________________________
+
+// "Apply discount to cart" And "isNaN"
+
+// let priceOfProduct = prompt("Please enter the amount in tomans.");
+// let price = Number(priceOfProduct);
+// if(isNaN(price)){
+//     alert("Please enter it as a number.");
+// }
+// else{
+//     if(price===0){
+//     console.log("Please purchase a product first.");
+//     }
+//     else{
+//     let checkCode = prompt("Is your discount code a gold one or a silver one?");
+//         if(checkCode === "gold"){
+//             let discount = price*0.3;
+//             let finalPrice = price - discount;
+//             console.log(`Your final amount is : ${finalPrice}`);  
+//         }
+//         else if(checkCode === "silver"){
+//             let discount = price*0.15;
+//             let finalPrice = price - discount;
+//             console.log(`Your final amount is : ${finalPrice}`);
+//         }
+//         else{
+//             console.log("Your discount code is invalid, or you didn't enter a code.");
+//         }
+//     }
+// }
+
+//___________________________________________________________________________________________________________________
+
+// "Switch-case cindditional structure"
+
+// first:
+let userRol= admin;
+switch(userRol){
+    case (admin):
+        console.log("You can add person to this company");
+        break;
+    case (editor):
+        console.log("You can edit it however you want");
+        break;
+    default :
+        console.log("Your rank is invalid");
+}
+
+//___________________________________________________________________________________________________________________
+
