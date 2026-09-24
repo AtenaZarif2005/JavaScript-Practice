@@ -156,17 +156,68 @@
 // "Switch-case cindditional structure"
 
 // first:
-let userRol= admin;
-switch(userRol){
-    case (admin):
-        console.log("You can add person to this company");
-        break;
-    case (editor):
-        console.log("You can edit it however you want");
-        break;
-    default :
-        console.log("Your rank is invalid");
-}
+// let userRol= "admin";
+// switch(userRol){
+//     case "admin":
+//         console.log("You can add person to this company");
+//         break;
+//     case "editor":
+//         console.log("You can edit it however you want");
+//         break;
+//     default :
+//         console.log("Your rank is invalid");
+// }
 
+// second
+// let score = +prompt("please enter your score.");
+// switch(true){
+//     case (score>90):
+//         console.log("Great");
+//         break;
+//     case (score>70):
+//         console.log("Good");
+//         break;
+//     case (score>50):
+//         console.log("Isn't good");
+//         break;
+//     default:
+//         console.log("Bad");
+// }
+
+// third
+// let day = prompt("What day is it today?enter it.");
+// switch(day){
+//     case "saturday":
+//     case "sunday":
+//         console.log("Today is a day off.");
+//         break;
+//     default:
+//         console.log("Today is a working day.");
+// }
+
+//___________________________________________________________________________________________________________________
+
+// Ternary operator
+// 3 simple exercises for the ternary oprators:
+
+// first
+// let price = +prompt("Please enter the amount in tomans.");
+// let howMany = +prompt("How many did you buy?");
+// let totalPrice = price * howMany;
+// alert(`Original price is ${totalPrice}`);
+// let delivery = totalPrice >= 100000 ? "Congratulation, Since your purchase is above 250,000 tomans, you qualify for." 
+// : "The delivery fee will be added to the total";
+// alert(delivery);
+
+// second
+// let button = true;
+// let message = button === true ? "Log out" : "Log in";
+// alert(message);
+
+// third
+let yearOfBirth = prompt("Please enter your year of birth.");
+let ageCalcuation = 2026 - yearOfBirth;
+let message = ageCalcuation >= 18 ? "Welcome." : "You can't use the contant of the site.";
+alert(`You are ${ageCalcuation}, ${message}`);
 //___________________________________________________________________________________________________________________
 
