@@ -1,4 +1,4 @@
-JavaScript Practice
+#JavaScript Practice
 
 A long-term learning project focused on practicing JavaScript fundamentals through hands-on exercises and small coding challenges.
 
