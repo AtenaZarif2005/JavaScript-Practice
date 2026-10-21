@@ -197,7 +197,7 @@
 
 //___________________________________________________________________________________________________________________
 
-// Ternary operator
+// "Ternary operator"
 // 3 simple exercises for the ternary oprators:
 
 // first
@@ -215,9 +215,177 @@
 // alert(message);
 
 // third
-let yearOfBirth = prompt("Please enter your year of birth.");
-let ageCalcuation = 2026 - yearOfBirth;
-let message = ageCalcuation >= 18 ? "Welcome." : "You can't use the contant of the site.";
-alert(`You are ${ageCalcuation}, ${message}`);
+// let yearOfBirth = prompt("Please enter your year of birth.");
+// let ageCalcuation = 2026 - yearOfBirth;
+// let message = ageCalcuation >= 18 ? "Welcome." : "You can't use the contant of the site.";
+// alert(`You are ${ageCalcuation} years old, ${message}`);
+
 //___________________________________________________________________________________________________________________
 
+//"Logical operator"
+
+// or: 1 -> ||
+// let accessLevel = prompt("Please enter your level from the following options: \n 1.Admin\n2.Manager\n3.Designer\n4.Regular user");
+// if (accessLevel==="Manager" || accessLevel==="Admin"){
+//     console.log("You can edit this web.");
+// }
+// else{
+//     console.log("Your user level is basic");
+// }
+// or: 2 -> ||
+// let cityInput = prompt("Enter your city.");
+// if(cityInput==="Tehran" || cityInput==="Mashhad" || cityInput==="Karaj"){
+//     alert("Your shipping is free.");
+// }
+// else{
+//     alert("The courier fee is 50 tomans.");
+// }
+
+// and: 1 -> &&
+// let totalPrice = +prompt("Enter the total price.");
+// let level = prompt("Please enter your pro level code.");
+// if (totalPrice>=500000 && level==="VIP" ){
+//     alert("Thank you for your purchase.");
+// }
+// else{
+//     alert("Failed. You can only make a purchase if the amount is over 500,000 tomans and you are a permium member.");
+// }
+// and: 2 -> &&
+// alert("To purchase this game, you must be at least 18 yers old and have an account balance exeeding 5 million.\n\n\nIf you qualify, press start.")
+// let ageRestriction = prompt("Please enter your age.");
+// let walletBalance = 50000000;
+// if(ageRestriction>= 18 && walletBalance>=5000000){
+//     console.log("The package ia available for purchase.");
+// }
+// else{
+//     console.log("Failed.");
+// }
+
+//___________________________________________________________________________________________________________________
+
+// "Function"
+// fullname();
+// function declaration;
+// function fullname(){
+//     console.log("I'm Atena Zarif");
+// }
+
+// function expression
+// const me = function(){
+//     console.log("I'm Atena Zarif");
+// }
+// me();
+
+// function checkAge(age){
+//     +prompt("enter your age.");
+//     if(age>=18){
+//         console.log("You can use all you needs");
+//     }
+//     else{
+//         alert("You cant use it.");
+//     }
+// }
+// checkAge();
+
+//___________________________________________________________________________________________________________________
+
+// User Information System Mini Project
+
+// let fullName = prompt("Enter your name.");
+// let email = prompt("Enter your email address.");
+// let number = prompt("Enter your mobile number.");
+let password = prompt("Enter your password.");
+// let bio = prompt("Enter your biography.");
+// let website = prompt("Enter your GitHub address.");
+// let cardNumber = prompt("Enter your card number.");
+
+// let checkName = fullName.trim().toLowerCase();
+// let nameFormatted = checkName.charAt(0).toUpperCase() + checkName.slice(1);
+// console.log(nameFormatted)
+
+// let checkEmail = email.trim().toLowerCase();
+// let isEmailValid = checkEmail.includes("@");
+// if (isEmailValid) {
+//     let atPosition = checkEmail.indexOf("@");
+//     let userName = checkEmail.slice(0, atPosition);
+//     let emailDomain = checkEmail.slice(atPosition + 1);
+//     console.log("Username:", userName);
+//     console.log("Email domain:", emailDomain);
+// } else {
+//     console.log("Invalid email address.");
+// }
+
+// let numberLength = number.length ===11;
+// if (numberLength) {
+//     let numberFormatter =number.slice(0,4)+ "_" + number.slice(4,7) + "_" + number.slice(7);
+//     console.log(numberFormatter);
+//     let numberstarter = number.startsWith("09");
+//     console.log(numberstarter);
+// }
+// else {
+//     console.log("Its not a valid number, please try it again.");
+// }
+
+// let passwordLength = password.length === 8;
+// if (passwordLength){
+//     let isValidPassword = 
+//         password.includes("0") ||
+//         password.includes("1") ||
+//         password.includes("2") ||
+//         password.includes("3") || 
+//         password.includes("4") ||
+//         password.includes("5") ||
+//         password.includes("6") ||
+//         password.includes("7") ||
+//         password.includes("8") ||
+//         password.includes("9");
+//     const upper ="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+//     let hasUpper = false;
+//     for (let i =0; i < passwordLength; i++){
+//         if(upper.includes(password[i])){
+//             hasUpper = true;
+//         }
+//     }
+//     if (isValidPassword && hasUpper){
+//         console.log("Valid Password")
+//     }
+//     else{
+//         console.log("Its not a valid password, try again")
+//     }
+// }
+// else{
+//     console.log("Its not a valid password, try again")
+// }
+
+let passwordLength = password.length >= 8;
+
+if (passwordLength) {
+    let isValidPassword =
+        password.includes("0") ||
+        password.includes("1") ||
+        password.includes("2") ||
+        password.includes("3") ||
+        password.includes("4") ||
+        password.includes("5") ||
+        password.includes("6") ||
+        password.includes("7") ||
+        password.includes("8") ||
+        password.includes("9");
+
+    const upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    let hasUpper = false;
+
+    for (let i = 0; i < password.length; i++) {
+        if (upper.includes(password[i])) {
+            hasUpper = true;
+        }
+    }
+
+    if (isValidPassword && hasUpper) {
+        console.log("Valid Password");
+    } else {
+        console.log("It's not a valid password, try again");
+    }
+} else {
+    console.log("It's not a valid password, try again");
+}
